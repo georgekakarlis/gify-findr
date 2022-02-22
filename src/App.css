@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+body {
+  background: #0F1624;
+  font-family: 'Seymour One', sans-serif;
+}
+
+h1 {
+  color: #95B2B0;
+  font-size: 4rem;
+  text-align: center;
+}
+
+h3 {
+  color: #95B2B0;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.fav-gifs {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.searched-gifs {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  justify-items: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+button {
+  background: #95B2B0;
+  color: #000;
+  font-family: 'Seymour One', sans-serif;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #FFE62E;
+  transition: .4s;
+}
+
+input {
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 1rem 5rem;
+}
+
+img {
+  /* height: 14rem;
+  width: 14rem; */
+  height: 185px;
+  width: 237px;
+}
+
+.single-fav-gif {
+  display: grid;
+  align-content: center;
+  border: 10px solid #95B2B0;
+  margin: 0 1rem;
+}
+
+.single-search-gif {
+  display: grid;
+  align-content: center;
+
+  padding: 1rem;
+}
+
+.save-remove-button {
+  margin-top: 1rem;
+}
+
+.search-section {
+  display: grid;
+  justify-content: center;
+  border: 5px solid #95B2B0;
+  padding-bottom: 2rem;
+  margin: 1rem 2rem;
+}
+
+.search-button {
+  margin: 1rem 5rem;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .search-section {
+    padding-bottom: 2rem;
+    margin: .5rem;
+  }
+  .search-button {
+    margin: 1rem 2rem;
+  }
+  input {
+    margin: 1rem 2rem;
+  }
+}
